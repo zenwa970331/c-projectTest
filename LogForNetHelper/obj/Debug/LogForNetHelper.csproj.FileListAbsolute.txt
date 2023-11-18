@@ -1,0 +1,9 @@
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\bin\Debug\LogForNetHelper.dll
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\bin\Debug\LogForNetHelper.pdb
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\bin\Debug\log4net.dll
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\bin\Debug\log4net.xml
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\obj\Debug\LogForNetHelper.csproj.AssemblyReference.cache
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\obj\Debug\LogForNetHelper.csproj.CoreCompileInputs.cache
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\obj\Debug\LogForNetHelper.csproj.CopyComplete
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\obj\Debug\LogForNetHelper.dll
+C:\Users\10500\Desktop\C#_project\LogForNetHelper\obj\Debug\LogForNetHelper.pdb

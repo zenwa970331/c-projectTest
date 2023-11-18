@@ -1,0 +1,16 @@
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\bin\Debug\HMIControls.dll
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\bin\Debug\HMIControls.pdb
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls_MarkupCompile.cache
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls_MarkupCompile.lref
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\Themes\Generic.baml
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.g.resources
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.Properties.Resources.resources
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.csproj.GenerateResource.cache
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.csproj.CoreCompileInputs.cache
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.dll
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.pdb
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.csproj.CopyComplete

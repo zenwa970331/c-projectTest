@@ -1,0 +1,132 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:HMIControls" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <Style TargetType="{x:Type local:newfan}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:newfan}">
+                    <Viewbox Stretch="Fill">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="MyVisualStateGroup">
+                                <VisualState x:Name="stop"/>
+                                <VisualState x:Name="run">
+                                    <Storyboard AutoReverse="False" RepeatBehavior="Forever">
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle1">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse1">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse2">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="270"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="360"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="450"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="540"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Canvas d:DesignHeight="212.889" d:DesignWidth="219.111" Height="212.889" Width="219.111">
+                            <Rectangle x:Name="rectangle1" Height="121.666" Stroke="Black" Width="54" Canvas.Left="121.333" Canvas.Top="124.889" RenderTransformOrigin="1.396,0.451">
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90"/>
+                                        <TranslateTransform X="-41.576" Y="54.236"/>
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <LinearGradientBrush.RelativeTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                                <RotateTransform Angle="88" CenterY="0.5" CenterX="0.5"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </LinearGradientBrush.RelativeTransform>
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White" Offset="0.469"/>
+                                        <GradientStop Color="#FF454545"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Rectangle x:Name="rectangle" Height="121.666" Stroke="Black" Width="54">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <LinearGradientBrush.RelativeTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                                <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </LinearGradientBrush.RelativeTransform>
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White" Offset="0.469"/>
+                                        <GradientStop Color="#FF454545"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <Ellipse x:Name="ellipse" Height="180" Stroke="Black" Canvas.Top="32.889" Width="180" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse x:Name="ellipse1" Stroke="Black" Canvas.Top="47.889" Width="150" Canvas.Left="15" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.487,0.523">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse x:Name="ellipse2" Height="100" Stroke="Black" Canvas.Top="72.889" Width="100" Canvas.Left="40">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Path x:Name="path" Stroke="Black" Canvas.Top="123.21" Fill="#FF454141" Height="83.602" Data="M42.291624,41.307381 L41.307379,41.310383 41.310383,42.294628 42.294628,42.291622 z M59.399498,0.5 L51.947763,31.939007 82.934998,25.673494 83.101997,59.399498 51.662991,51.947762 57.928505,82.934998 24.2025,83.101997 31.654236,51.662994 0.66700554,57.928505 0.5,24.202501 31.939002,31.654234 25.673495,0.66700509 z" Canvas.Left="46.797" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Width="83.601">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="180"/>
+                                        <TranslateTransform X="1.47099" Y="-41.769"/>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Ellipse x:Name="ellipse3" Height="20" Stroke="Black" Canvas.Top="112.889" Width="20" Canvas.Left="80">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF3D3D3D" Offset="1"/>
+                                        <GradientStop Color="White"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Canvas>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

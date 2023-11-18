@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blendLearn", "blendLearn\blendLearn.csproj", "{DC63FE20-4B90-4E5F-A12C-F26E0CB0D355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMIControls", "blendLearn\HMIControls\HMIControls.csproj", "{92263D02-FEF8-413F-8C52-C324CFCD003A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC63FE20-4B90-4E5F-A12C-F26E0CB0D355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC63FE20-4B90-4E5F-A12C-F26E0CB0D355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC63FE20-4B90-4E5F-A12C-F26E0CB0D355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC63FE20-4B90-4E5F-A12C-F26E0CB0D355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92263D02-FEF8-413F-8C52-C324CFCD003A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92263D02-FEF8-413F-8C52-C324CFCD003A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92263D02-FEF8-413F-8C52-C324CFCD003A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92263D02-FEF8-413F-8C52-C324CFCD003A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E31E903-DB57-4C46-A0B7-F929AF03D1CE}
+	EndGlobalSection
+EndGlobal
