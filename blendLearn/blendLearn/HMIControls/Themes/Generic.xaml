@@ -10,35 +10,36 @@
                 <ControlTemplate TargetType="{x:Type local:newfan}">
                     <Viewbox Stretch="Fill">
                         <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="MyVisualStateGroup">
+                            <VisualStateGroup x:Name="work">
                                 <VisualState x:Name="stop"/>
                                 <VisualState x:Name="run">
-                                    <Storyboard x:Name="sb" AutoReverse="False" RepeatBehavior="Forever">
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle">
-                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                    <Storyboard RepeatBehavior="Forever" AutoReverse="False">
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="ellipse">
+                                            <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF52B62A"/>
+                                            <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFB62A2A"/>
                                         </ColorAnimationUsingKeyFrames>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle1">
-                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
-                                        </ColorAnimationUsingKeyFrames>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse">
-                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
-                                        </ColorAnimationUsingKeyFrames>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse1">
-                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
-                                        </ColorAnimationUsingKeyFrames>
-                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse2">
-                                            <EasingColorKeyFrame KeyTime="0" Value="#FF1CF71A"/>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="ellipse">
+                                            <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF49FF00"/>
+                                            <EasingColorKeyFrame KeyTime="0:0:2" Value="Red"/>
                                         </ColorAnimationUsingKeyFrames>
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
-                                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="60"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="360"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="540"/>
                                         </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="ellipse">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse">
+                                            <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2C65DB"/>
+                                            <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF2D53A3"/>
+                                        </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Canvas d:DesignHeight="212.889" d:DesignWidth="219.111" Height="212.889" Width="219.111">
-                            <Rectangle x:Name="rectangle1" Height="121.666" Stroke="Black" Canvas.Left="121.333" Canvas.Top="124.889" RenderTransformOrigin="1.396,0.451" Width="{Binding doubleTest, RelativeSource={RelativeSource TemplatedParent}}">
+                        <Canvas Height="212.889" Width="219.111">
+                            <Rectangle x:Name="rectangle1" Height="121.666" Stroke="Black" Canvas.Left="121.333" Canvas.Top="124.889" RenderTransformOrigin="1.396,0.451" Width="54">
                                 <Rectangle.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -85,6 +86,7 @@
                                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                                         <GradientStop Color="#FF3D3D3D" Offset="1"/>
                                         <GradientStop Color="White"/>
+                                        <GradientStop Color="#FFA1A1A1" Offset="0.483"/>
                                     </LinearGradientBrush>
                                 </Ellipse.Fill>
                             </Ellipse>

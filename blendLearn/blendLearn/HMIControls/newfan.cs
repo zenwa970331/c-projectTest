@@ -63,7 +63,5 @@ namespace HMIControls
             DependencyProperty.Register("doubleTest", typeof(double), typeof(newfan), new PropertyMetadata((double)10));
 
         #endregion
-
-
     }
 }

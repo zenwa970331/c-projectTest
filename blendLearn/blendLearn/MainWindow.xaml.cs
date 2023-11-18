@@ -25,24 +25,14 @@ namespace blendLearn
             InitializeComponent();
         }
 
-        private void fan_KeyDown(object sender, KeyEventArgs e)
+        private void fan_MouseEnter(object sender, MouseEventArgs e)
         {
-            VisualStateManager.GoToState(fan, "run", false);
+            VisualStateManager.GoToState(fan,"run", false);
         }
-        bool a = false;
-        private void fan_MouseDown(object sender, MouseButtonEventArgs e)
+
+        private void fan_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (a == false)
-            {
-                _ = VisualStateManager.GoToState(fan, "run", false);
-                a = true;
-            }
-            else
-            {
-                _ = VisualStateManager.GoToState(fan, "stop", false);
-                a = false;
-            }
-            
+            VisualStateManager.GoToState(fan, "stop", false);
         }
     }
 }

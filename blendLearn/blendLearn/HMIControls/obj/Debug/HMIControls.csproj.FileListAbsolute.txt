@@ -14,3 +14,4 @@ C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HM
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.csproj.CopyComplete
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.dll
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.pdb
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\HMIControls\obj\Debug\HMIControls.csproj.AssemblyReference.cache
