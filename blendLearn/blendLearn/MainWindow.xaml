@@ -8,8 +8,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <HMIControls:newfan Name="fan" HorizontalAlignment="Left" VerticalAlignment="Top" 
                             Width="199" Margin="145,93,0,0" Height="186" MouseEnter="fan_MouseEnter" MouseLeave="fan_MouseLeave"/>
-
+        <Canvas Grid.Column="1">
+            <Button x:Name="bn_move" Height="32" Width="59" Canvas.Left="48" Canvas.Top="36">123</Button>
+        </Canvas>
+        <Slider HorizontalAlignment="Left" Margin="24,355,0,0" VerticalAlignment="Top" Width="357"/>
     </Grid>
 </Window>
