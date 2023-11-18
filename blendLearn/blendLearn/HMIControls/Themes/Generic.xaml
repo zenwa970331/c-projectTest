@@ -34,6 +34,9 @@
                                             <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF2C65DB"/>
                                             <EasingColorKeyFrame KeyTime="0:0:2" Value="#FF2D53A3"/>
                                         </ColorAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="rectangle1">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="130"/>
+                                        </DoubleAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
