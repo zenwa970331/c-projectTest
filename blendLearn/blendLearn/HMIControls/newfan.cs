@@ -50,5 +50,20 @@ namespace HMIControls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(newfan), new FrameworkPropertyMetadata(typeof(newfan)));
         }
+        #region 依赖属性
+
+        public double doubleTest
+        {
+            get { return (double)GetValue(doubleTestProperty); }
+            set { SetValue(doubleTestProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for doubleTest.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty doubleTestProperty =
+            DependencyProperty.Register("doubleTest", typeof(double), typeof(newfan), new PropertyMetadata((double)10));
+
+        #endregion
+
+
     }
 }
