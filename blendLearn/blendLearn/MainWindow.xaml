@@ -15,8 +15,10 @@
         <HMIControls:newfan Name="fan" HorizontalAlignment="Left" VerticalAlignment="Top" 
                             Width="199" Margin="145,93,0,0" Height="186" MouseEnter="fan_MouseEnter" MouseLeave="fan_MouseLeave"/>
         <Canvas Grid.Column="1">
-            <Button x:Name="bn_move" Height="32" Width="59" Canvas.Left="48" Canvas.Top="36">123</Button>
+            <Button x:Name="bn_move" Height="32" Width="59" Canvas.Left="48" Canvas.Top="36" MouseDoubleClick="bn_move_MouseDoubleClick">123</Button>
         </Canvas>
-        <Slider HorizontalAlignment="Left" Margin="24,355,0,0" VerticalAlignment="Top" Width="357"/>
+        <Slider x:Name="sl" Value="{Binding XSize}" HorizontalAlignment="Left" Margin="24,355,0,0" 
+                VerticalAlignment="Top" Width="357" Maximum="300" Minimum="0" SmallChange="5"
+                TickFrequency="5"/>
     </Grid>
 </Window>

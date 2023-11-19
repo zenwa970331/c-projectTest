@@ -37,6 +37,29 @@
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="rectangle1">
                                             <EasingDoubleKeyFrame KeyTime="0:0:1" Value="130"/>
                                         </DoubleAnimationUsingKeyFrames>
+                                        <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="path">
+                                            <EasingPointKeyFrame KeyTime="0:0:1" Value="0.5,0.5"/>
+                                            <EasingPointKeyFrame KeyTime="0:0:2" Value="0.5,0.5"/>
+                                        </PointAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="path">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.47099"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.471"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="path">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-41.769"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-41.769"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+                                            <EasingColorKeyFrame KeyTime="0" Value="#FFFB9DFF"/>
+                                            <EasingColorKeyFrame KeyTime="0:0:1" Value="#FFFB9DFF"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)" Storyboard.TargetName="path">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="0.1"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.9"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.1"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0.9"/>
+                                            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.095"/>
+                                        </DoubleAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
