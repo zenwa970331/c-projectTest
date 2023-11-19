@@ -20,3 +20,4 @@ C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\obj\Debug\blendLearn.Pro
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\obj\Debug\blendLearn.csproj.GenerateResource.cache
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\obj\Debug\blendLearn.csproj.CoreCompileInputs.cache
 C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\obj\Debug\blendLearn.csproj.CopyComplete
+C:\Users\10500\Desktop\C#_project\blendLearn\blendLearn\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -55,11 +55,30 @@ namespace blendLearn
                 Run2(bn_move, value);
             }
         }
+        private double _rSize;
+
+        public double RSize
+        {
+            get { return _rSize; }
+            set
+            {
+                _rSize = value;
+                hasNew = true;
+                //Run(bn_move, value + 0.02);
+                Run3(bn_move, value);
+            }
+        }
 
         DoubleAnimation x_move = new DoubleAnimation()
         {
             Duration = new TimeSpan(0, 0, 0, 0, 100),
         };
+        DoubleAnimation r_move = new DoubleAnimation()
+        {
+            Duration = new TimeSpan(0, 0, 0, 0, 100),
+        };
+        RotateTransform rotate = new RotateTransform();
+        
         private void Run(UIElement element, double to)
         {
             if (Math.Abs(to - XSize) > 0.01 && hasNew && !isRunning)
@@ -86,7 +105,11 @@ namespace blendLearn
             x_move.To = to;
             element.BeginAnimation(Canvas.LeftProperty, x_move);
         }
-
+        private void Run3(UIElement element, double to)
+        {
+            r_move.To = to;
+            rotate.BeginAnimation(RotateTransform.AngleProperty, r_move);
+        }
         #endregion
 
         #region 动画测试2
@@ -156,6 +179,12 @@ namespace blendLearn
         {
             //test();
             test2();
+        }
+
+        private void bn_move_Loaded(object sender, RoutedEventArgs e)
+        {
+            bn_move.RenderTransform = rotate;
+            bn_move.RenderTransformOrigin = new Point(0.5, 0.5);
         }
     }
 }

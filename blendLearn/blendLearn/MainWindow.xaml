@@ -7,6 +7,9 @@
         xmlns:HMIControls="clr-namespace:HMIControls;assembly=HMIControls" x:Class="blendLearn.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <!--<Window.DataContext>
+        <local:MainWindow/>
+    </Window.DataContext>-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -15,10 +18,13 @@
         <HMIControls:newfan Name="fan" HorizontalAlignment="Left" VerticalAlignment="Top" 
                             Width="199" Margin="145,93,0,0" Height="186" MouseEnter="fan_MouseEnter" MouseLeave="fan_MouseLeave"/>
         <Canvas Grid.Column="1">
-            <Button x:Name="bn_move" Height="32" Width="59" Canvas.Left="48" Canvas.Top="36" MouseDoubleClick="bn_move_MouseDoubleClick">123</Button>
+            <Button x:Name="bn_move" Height="32" Width="59" Canvas.Left="48" Canvas.Top="36" MouseDoubleClick="bn_move_MouseDoubleClick" Loaded="bn_move_Loaded">123</Button>
         </Canvas>
         <Slider x:Name="sl" Value="{Binding XSize}" HorizontalAlignment="Left" Margin="24,355,0,0" 
                 VerticalAlignment="Top" Width="357" Maximum="300" Minimum="0" SmallChange="5"
+                TickFrequency="5"/>
+        <Slider x:Name="s2" Value="{Binding RSize}" HorizontalAlignment="Left" Margin="24,393,0,0" 
+                VerticalAlignment="Top" Width="357" Maximum="720" Minimum="0" SmallChange="5"
                 TickFrequency="5"/>
     </Grid>
 </Window>
